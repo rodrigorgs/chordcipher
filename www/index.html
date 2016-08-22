@@ -9,6 +9,9 @@
   <body>
     <input id="chordInput" type="text" value='["1", "3", "3", "2", "1", "1"]'/>
     <button id="playChord">Play!</button>
+    <p>
+      <h1 id="toq">Toque aqui</h1>
+    </p>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type='text/javascript' src='js/Tone.js'></script>
@@ -23,7 +26,6 @@
         playChord(JSON.parse(chord))
       });
       
-      <h1 id="toq">Toque aqui</h1>
       document.getElementById("toq").addEventListener("touchstart"), function() {
         chord = document.getElementById("chordInput").value;
         playChord(JSON.parse(chord))
